@@ -21,7 +21,7 @@ void f_swap(stack_t **head, unsigned int counter)
 		fprintf(stderr, "L%d: can't swap, stack too short\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		free_stack(*head, counter);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
