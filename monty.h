@@ -8,6 +8,8 @@
 #include <string.h>
 #include <ctype.h>
 #define GNU_SOURCE
+#define _POSIX_C_SOURCE 200809L
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
