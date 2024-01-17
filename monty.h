@@ -1,7 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-
 #define _GNU_SOURCE
 #include <stdio.h>  
 #include <stdlib.h>
@@ -80,6 +79,4 @@ void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
-void free_stack(stack_t *head, unsigned int counter);
 #endif
-
