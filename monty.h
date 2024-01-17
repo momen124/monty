@@ -1,15 +1,13 @@
 #ifndef MONTY_H
 #define MONTY_H
 #include <stdio.h>
+#define _POSIX_C_SOURCE 200809L
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
-#define GNU_SOURCE
-#define _POSIX_C_SOURCE 200809L
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -79,3 +77,4 @@ void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
 #endif
+
